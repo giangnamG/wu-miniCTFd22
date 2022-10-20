@@ -16,7 +16,7 @@
 
 >Sau khi send, ta lại nhận được một message nữa: `'Địa chỉ localhost của bạn?'` chắc chắn là `127.0.0.1`
 <br>
-> Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>Nhấn send ta được : 
+- >Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>Nhấn send ta được : 
 
 - >![](images/4.png)  
 
