@@ -106,7 +106,6 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 
 > Tiếp theo đi tìm `password` bằng cách cắt từng kí tự của `password` từ ký tự đầu đến ký tự cuối, để đem so sánh với bảng chữ cái từ `a->z` và `0->9`.<br>
 > Mục đích của việc này là ta chỉ có thể đem so sánh ký tự, kết quả đúng thì trả về `login success`, sai thì `username or password is wrong`.<br>
-> Vậy nên để bruteforce được kiểu này, thì việc tiên quyết phải làm là đi tìm độ dài `password` :(
 
 > Payload: `username=asd'+and+(select+substring(password,§1§,1)+from+sqli_blind+where+username='myFlag')='§c§&password=asd&login=`
    - >![](images/22.png)
