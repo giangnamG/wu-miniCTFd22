@@ -16,9 +16,9 @@
 
 >Sau khi send, ta lại nhận được một message nữa: `'Địa chỉ localhost của bạn?'` chắc chắn là `127.0.0.1`
 <br>
-- Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>
-Nhấn send ta được : 
->![](images/4.png)  
+> Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>Nhấn send ta được : 
+
+- >![](images/4.png)  
 
 >Lần này server yêu cầu ngày tháng, và ngày tháng đó chính là ngày thành lập khoa ATTT. 
 - Osint theo link gợi ý ta tìm được bài viết có ngày, tháng, năm: <a href="https://portal.ptit.edu.vn/hoc-vien-cong-nghe-buu-chinh-vien-thong-thanh-lap-khoa-an-toan-thong-tin/">Link bài viết</a>
