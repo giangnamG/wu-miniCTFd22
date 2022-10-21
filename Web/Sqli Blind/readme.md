@@ -109,10 +109,10 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 
 > Payload: `username=asd'+and+(select+substring(password,§1§,1)+from+sqli_blind+where+username='myFlag')='§c§&password=asd&login=`
    - >![](images/22.png)
-  - > Biến `§1§` đề cắt kí tự thứ `§1§` ra, `password` như 1 xâu ký tự, mỗi ký tự sẽ được đem so sánh với biến `§c§`
+  - > Biến `§1§` đề cắt kí tự thứ `§1§` của `password` ra, `password` như 1 xâu ký tự, mỗi ký tự sẽ được đem so sánh với biến `§c§`
   - > Biến `$1$` chọn payload type là `Numbers` chạy từ `1->60`, vì length password = 60;
-  - > Biến `§c§` chạy payload type là `` từ `a->z, 0->9`
-  - > Mỗi một ký tự được cắt ra bới chỉ số `$1$` sẽ được so sánh với mỗi giá trị trong `a->z, 0->9`
+  - > Biến `§c§` chạy payload type là `Bruteforce` từ `a->z, 0->9`
+  - > Mỗi một ký tự được cắt ra bới chỉ số `$1$` sẽ được so sánh với tất cả giá trị trong `a->z, 0->9`
   - > Chọn kiểu tấn công là `cluster bomb`
   - > Nhớ `grep-match` cụm từ `success` để biết ký tự nào được `blind` đúng.
   - > Cuối cùng nhấn `start-attack` 
@@ -120,7 +120,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
   - >Nếu bạn không có burpPro thì khoảng vài tiếng sẽ cho ra kết quả sau:
    - >![](images/23.png)
    - > Loại bỏ tất cả các hàng không match được với `success`
-   - > Sắp xếp lại `payload1` từ 1->60 đi kèm với với `payload2`
+   - > Sắp xếp lại `payload1` từ 1->60 đi kèm với `payload2`
     - > ![](images/24.png)
     - > Những 60 ký tự cơ, sau đó thì copy lên <a href="https://kt.gy/tools.html#conv/ISPCTF%7BBl1nd_brut3f0rc3_01fg6%7D">kt.gy</a> để dehex vậy là ta có Flag :>
     - >![](images/25.png)
