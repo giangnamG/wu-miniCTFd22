@@ -23,7 +23,7 @@
 - <image src="./images/6.png" width="70%">
 - Khi nhấn `women`  truy vấn `'?category=women'` được gọi.
 
-> Mặc dù không chắc, nhưng ít nhất có thể khai thác ở đây vì method GET đập lù lù vào mắt :( <br> Ta thấy các sản phẩm được xuất ra sau khi truy vấn, như vậy nếu như ở đây có lỗ hổng, các thông tin chúng ta cần biết như `'column_name'` `'table_name'` cũng sẽ được hiện ra đây ở đây, nếu như select đúng :>
+> Ta thấy các sản phẩm được xuất ra sau khi truy vấn, như vậy nếu như ở đây có lỗ hổng, các thông tin chúng ta cần biết như `'column_name'` `'table_name'` cũng sẽ được hiện ra đây ở đây, nếu như select đúng :>
 
 > Vậy bây giờ bắt đầu như nào? :(
 - > Bật BurpSuite lên đã rồi làm gì thì làm :(
