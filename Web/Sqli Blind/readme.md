@@ -13,7 +13,7 @@
 >Truy cập vào ta được gợi ý<br>
 - >![](images/4.png)
 - >Có 1 file ẩn :  `brut3f0rc3`
-- > Có thứ gì đó trong :`'information schema, columns , tables'`<br> Vậy là phải tìm được `column_name` trong `columns`, `table_name` trong `tables`. Ok vào file `brut3f0rc3` trước đã
+- > Có thứ gì đó trong :`'information schema, columns , tables'`<br> Vậy là sẽ tìm được `column_name` trong `columns`, `table_name` trong `tables`. Ok vào file `brut3f0rc3` trước đã
 
 # Bước 2
 
