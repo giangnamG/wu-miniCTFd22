@@ -63,7 +63,7 @@ Truy cập vào ta được gợi ý<br>
  Giờ thì sao? <br>
  Ta đã tìm được tên bảng là `sqli_blind`, tên 2 cột là `username`,` password`.<br>
  Cùng với 2 đối số chấp nhận kiểu string, `select` chúng ra thôi chứ còn gì nữa :))<br>
-> =>Payload: `category=women'union+select+username,password,null,null+from+sqli_blind%23`
+   > =>Payload: `category=women'union+select+username,password,null,null+from+sqli_blind%23`
 
  Nhưng đời không như là mơ, cứ tưởng thế là xong thì auth lại chặn truy vấn, cũng phải thôi, đề bài là `sqli_blind` mà :( <br>
  - Ta thu được username = `myFlag`
@@ -111,9 +111,9 @@ Nhưng trước hết ta cần biết độ dài của `password` bằng bao nhi
    - ![](images/22.png)
   - > Biến `§1§` đề cắt kí tự thứ `§1§` của `password` ra, `password` như 1 xâu ký tự, mỗi ký tự sẽ được đem so sánh với biến `§c§`
   - > Biến `$1$` chọn payload type là `Numbers` chạy từ `1->60`, vì length password = 60;
+  - > Chọn kiểu tấn công là `cluster bomb`
   - > Biến `§c§` chạy payload type là `Bruteforce` từ `a->z, 0->9`
   - > Mỗi một ký tự được cắt ra bới chỉ số `$1$` sẽ được so sánh với tất cả giá trị trong `a->z, 0->9`
-  - > Chọn kiểu tấn công là `cluster bomb`
   - > Nhớ `grep-match` cụm từ `success` để biết ký tự nào được `blind` đúng.
   - > Cuối cùng nhấn `start-attack` 
 
