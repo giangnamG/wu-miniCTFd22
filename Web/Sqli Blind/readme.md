@@ -110,8 +110,8 @@ Nhưng trước hết ta cần biết độ dài của `password` bằng bao nhi
 > Payload: `username=asd'+and+(select+substring(password,§1§,1)+from+sqli_blind+where+username='myFlag')='§c§&password=asd&login=`
    - ![](images/22.png)
   - > Biến `§1§` đề cắt kí tự thứ `§1§` của `password` ra, `password` như 1 xâu ký tự, mỗi ký tự sẽ được đem so sánh với biến `§c§`
-  - > Biến `$1$` chọn payload type là `Numbers` chạy từ `1->60`, vì length password = 60;
   - > Chọn kiểu tấn công là `cluster bomb`
+  - > Biến `$1$` chọn payload type là `Numbers` chạy từ `1->60`, vì length password = 60;
   - > Biến `§c§` chạy payload type là `Bruteforce` từ `a->z, 0->9`
   - > Mỗi một ký tự được cắt ra bới chỉ số `$1$` sẽ được so sánh với tất cả giá trị trong `a->z, 0->9`
   - > Nhớ `grep-match` cụm từ `success` để biết ký tự nào được `blind` đúng.
