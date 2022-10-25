@@ -7,7 +7,7 @@
  Đầu tiên là tạo tài khoản. Tạo 1 username: `asd`, password: `asd`. Sau đó đăng nhập, ta có 1 `alert` hiện ra:
 - ![](images/1.png)
 
-> `login success` và không có flag, rồi sao? :( <br>
+ `login success` và không có flag, rồi sao? :( <br>
  Để ý ở phần `Footer`, cho `robots.txt`
 - ![](images/3.png)<br>
 Truy cập vào ta được gợi ý<br>
