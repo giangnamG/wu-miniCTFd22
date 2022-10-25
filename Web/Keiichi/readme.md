@@ -16,7 +16,8 @@ Lúc này ta cần nghĩ tới file ẩn. Truớc khi nghĩ tới các cách đ�
 Truy cập vào file `0m3B4ck_Y` bị ẩn này ta thấy trang có nội dung sau:<br>
 - ![](images/3.png)
 
->  Encode: `MHVfQ2FuX2ZpbmRfaGltfQ==`<br>
+>  Encode: `MHVfQ2FuX2ZpbmRfaGltfQ==`
+
 Nhìn đoạn mã kia có vẻ bị như message ban đầu bị `encode Base64`, dễ dàng decode với <a href="https://kt.gy/tools.html#conv/0u_Can_find_him%7D">kt.gy</a> <br>
 
 - Ta thu được kết quả:<br>
